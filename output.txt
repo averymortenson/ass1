@@ -1,0 +1,6 @@
+# This file will be replaced by the output of the program
+# running at CSS Linux Labs
+#
+# Under unix, you can use
+# $  ./simplecompile.sh > output.txt 2>&1
+# to create output.txt file
