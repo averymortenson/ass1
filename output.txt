@@ -1,6 +1,21 @@
-# This file will be replaced by the output of the program
-# running at CSS Linux Labs
-#
-# Under unix, you can use
-# $  ./simplecompile.sh > output.txt 2>&1
-# to create output.txt file
+tp1: []
+tp2: [R 90]
+tp3: [F]
+tp4: [10]
+tp5 is a copy of tp2: [R 90]
+tp5 == tp2: true
+tp3 != tp4: true
+tp1 = tp3 + tp4: [F 10]
+tp3 should print F: tp3 is [F]
+tp1 += tp2: [F 10 R 90]
+tp6: []
+tp6 += tp1: [F 10 R 90]
+tp1 = tp2 * 3: [R 90 R 90 R 90]
+tp2 *= 3: [R 90 R 90 R 90]
+tp7: []
+tp7 *= 3 (should be empty): []
+tp5 before calling setIndex: [R 90]
+index 0 of tp5: R
+setting index 0 to 'F' & index 1 to '10'.
+tp5 after 2 calls to setIndex: [F 10]
+Done.
